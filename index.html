@@ -1,1014 +1,1018 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Ελληνικές Πολιτείες — Νέα πρόταση διοικητικής οργάνωσης της Ελλάδας</title>
-
-  <meta name="description" content="Πρόταση για ένα πολυκεντρικό και αποκεντρωμένο μοντέλο διοικητικής οργάνωσης της Ελλάδας με Ισχυρό Εθνικό Κράτος, ισχυρές Ελληνικές Πολιτείες και ενεργό πολίτη.">
-
-  <style>
-    :root {
-      --blue: #0b3d91;
-      --blue-dark: #06265c;
-      --blue-light: #eaf2ff;
-      --gold: #d4a72c;
-      --gold-light: #fff6d8;
-      --white: #ffffff;
-      --text: #1f2937;
-      --muted: #64748b;
-      --border: #dbe3ef;
-      --background: #f5f7fb;
-      --shadow: 0 10px 30px rgba(15, 39, 80, 0.10);
-      --radius: 16px;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.75;
-      color: var(--text);
-      background: var(--background);
-    }
-
-    a {
-      color: inherit;
-    }
-
-    /* =========================
-       HEADER
-    ========================= */
-
-    header {
-      background:
-        linear-gradient(135deg, rgba(6, 38, 92, 0.97), rgba(11, 61, 145, 0.95));
-      color: white;
-      text-align: center;
-      padding: 70px 20px 55px;
-      border-bottom: 5px solid var(--gold);
-    }
-
-    .header-inner {
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .flag-symbol {
-      font-size: 46px;
-      margin-bottom: 10px;
-    }
-
-    header h1 {
-      font-size: clamp(2.2rem, 6vw, 4.4rem);
-      letter-spacing: 2px;
-      margin-bottom: 10px;
-      font-weight: 800;
-    }
-
-    header h2 {
-      font-size: clamp(1.1rem, 2.5vw, 1.65rem);
-      font-weight: 400;
-      color: #f8df8b;
-      margin-bottom: 25px;
-    }
-
-    .header-intro {
-      max-width: 850px;
-      margin: auto;
-      font-size: 1.1rem;
-      color: #eef4ff;
-    }
-
-    /* =========================
-       NAVIGATION
-    ========================= */
-
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: white;
-      border-bottom: 1px solid var(--border);
-      box-shadow: 0 3px 12px rgba(0,0,0,0.06);
-    }
-
-    .nav-inner {
-      max-width: 1200px;
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 4px;
-      padding: 8px 12px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--blue-dark);
-      font-weight: 700;
-      padding: 9px 13px;
-      border-radius: 8px;
-      font-size: 0.92rem;
-    }
-
-    nav a:hover {
-      background: var(--blue-light);
-      color: var(--blue);
-    }
-
-    /* =========================
-       MAIN
-    ========================= */
-
-    main {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    section {
-      background: var(--white);
-      margin-bottom: 30px;
-      padding: 40px;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      border: 1px solid var(--border);
-    }
-
-    section h2 {
-      color: var(--blue-dark);
-      font-size: clamp(1.55rem, 3vw, 2.1rem);
-      line-height: 1.3;
-      margin-bottom: 22px;
-      border-left: 6px solid var(--gold);
-      padding-left: 15px;
-    }
-
-    section h3 {
-      color: var(--blue);
-      font-size: 1.35rem;
-      margin: 28px 0 12px;
-    }
-
-    p {
-      margin-bottom: 18px;
-    }
-
-    strong {
-      color: #102f63;
-    }
-
-    /* =========================
-       HERO
-    ========================= */
-
-    .hero {
-      background:
-        linear-gradient(135deg, #ffffff 0%, #eef4ff 100%);
-      text-align: center;
-      border-top: 5px solid var(--gold);
-    }
-
-    .hero h2 {
-      border-left: none;
-      padding-left: 0;
-      color: var(--blue-dark);
-      font-size: clamp(1.8rem, 4vw, 2.7rem);
-    }
-
-    .principle {
-      max-width: 850px;
-      margin: 25px auto 0;
-      padding: 22px;
-      background: var(--gold-light);
-      border: 1px solid #ead18a;
-      border-radius: 12px;
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: #5b4710;
-    }
-
-    /* =========================
-       HIGHLIGHT BOXES
-    ========================= */
-
-    .quote {
-      margin: 22px 0;
-      padding: 20px 24px;
-      background: var(--blue-light);
-      border-left: 5px solid var(--blue);
-      border-radius: 10px;
-      font-weight: 700;
-    }
-
-    .gold-box {
-      background: var(--gold-light);
-      border: 1px solid #ead18a;
-      padding: 22px;
-      border-radius: 12px;
-      margin-top: 20px;
-    }
-
-    .vision {
-      background:
-        linear-gradient(135deg, #06265c, #0b3d91);
-      color: white;
-      text-align: center;
-    }
-
-    .vision h2 {
-      color: white;
-      border-left: none;
-      padding-left: 0;
-    }
-
-    .vision strong {
-      color: #ffe49a;
-    }
-
-    /* =========================
-       LISTS
-    ========================= */
-
-    ul {
-      padding-left: 25px;
-      margin: 15px 0 20px;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
-    /* =========================
-       QUESTIONS
-    ========================= */
-
-    .questions {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 12px;
-      margin-top: 22px;
-    }
-
-    .question {
-      padding: 16px;
-      background: #f8fafc;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      font-weight: 700;
-      text-align: center;
-      color: var(--blue-dark);
-    }
-
-    /* =========================
-       STAT CARDS
-    ========================= */
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-      margin-top: 20px;
-    }
-
-    .card {
-      padding: 24px;
-      background: #f8fafc;
-      border: 1px solid var(--border);
-      border-top: 4px solid var(--blue);
-      border-radius: 12px;
-    }
-
-    .card h3 {
-      margin-top: 0;
-      font-size: 1.2rem;
-    }
-
-    /* =========================
-       TABLE
-    ========================= */
-
-    .table-wrapper {
-      overflow-x: auto;
-      margin-top: 25px;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 720px;
-      background: white;
-    }
-
-    th {
-      background: var(--blue-dark);
-      color: white;
-      padding: 15px;
-      text-align: left;
-      font-size: 0.98rem;
-    }
-
-    td {
-      padding: 14px 15px;
-      border-bottom: 1px solid var(--border);
-      vertical-align: top;
-    }
-
-    tr:nth-child(even) td {
-      background: #f8fafc;
-    }
-
-    /* =========================
-       FINAL STATEMENT
-    ========================= */
-
-    .final-statement {
-      text-align: center;
-      padding: 45px 25px;
-      background: linear-gradient(135deg, #fff9e6, #ffffff);
-      border: 2px solid #e5ca73;
-    }
-
-    .final-statement h2 {
-      border: none;
-      padding: 0;
-      color: var(--blue-dark);
-    }
-
-    .slogan {
-      font-size: clamp(1.2rem, 3vw, 1.8rem);
-      font-weight: 800;
-      color: var(--blue);
-      margin-top: 20px;
-    }
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    footer {
-      background: var(--blue-dark);
-      color: white;
-      text-align: center;
-      padding: 35px 20px;
-      margin-top: 50px;
-    }
-
-    footer p {
-      margin-bottom: 8px;
-    }
-
-    footer .hashtags {
-      color: #f8df8b;
-      font-size: 0.9rem;
-      max-width: 900px;
-      margin: 15px auto 0;
-    }
-
-    /* =========================
-       MOBILE
-    ========================= */
-
-    @media (max-width: 700px) {
-      header {
-        padding: 45px 16px 40px;
-      }
-
-      section {
-        padding: 26px 20px;
-      }
-
-      nav {
-        position: relative;
-      }
-
-      .nav-inner {
-        justify-content: flex-start;
-        overflow-x: auto;
-        flex-wrap: nowrap;
-      }
-
-      nav a {
-        white-space: nowrap;
-      }
-
-      main {
-        padding: 0 12px;
-        margin-top: 25px;
-      }
-
-      .questions {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ελληνικές Πολιτείες | Νέα πρόταση διοικητικής οργάνωσης της Ελλάδας</title>
+
+    <meta name="description" content="Ελληνικές Πολιτείες — Πρόταση για ένα ισχυρό εθνικό κράτος, ισχυρές Ελληνικές Πολιτείες, ενεργό πολίτη και σύγχρονη δημοκρατική διακυβέρνηση.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.75;
+            color: #172033;
+            background: #f4f7fb;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            background: linear-gradient(135deg, #071a3d, #0d3b78);
+            color: white;
+            padding: 55px 20px 45px;
+            text-align: center;
+            border-bottom: 5px solid #d4af37;
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .eyebrow {
+            font-size: 0.95rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #d9bd58;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        header h1 {
+            font-size: clamp(2.3rem, 6vw, 4.8rem);
+            line-height: 1.1;
+            letter-spacing: 2px;
+            margin-bottom: 18px;
+        }
+
+        header .subtitle {
+            font-size: clamp(1.15rem, 2.5vw, 1.6rem);
+            max-width: 850px;
+            margin: auto;
+            color: #f5f7fb;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #ffffff;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+
+        .nav-inner {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            display: block;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: #0b2d5c;
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            background: #edf3fb;
+            color: #0a5ca8;
+        }
+
+        /* =========================
+           MAIN
+        ========================= */
+
+        main {
+            max-width: 1100px;
+            margin: 45px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            background: white;
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 8px 30px rgba(20, 50, 90, 0.08);
+            margin-bottom: 35px;
+            border-left: 6px solid #d4af37;
+        }
+
+        .intro h2 {
+            color: #0b2d5c;
+            font-size: clamp(1.8rem, 4vw, 2.7rem);
+            margin-bottom: 20px;
+        }
+
+        .lead {
+            font-size: 1.2rem;
+            color: #34445d;
+        }
+
+        .principle {
+            margin-top: 25px;
+            padding: 22px 25px;
+            background: #eef5fc;
+            border-left: 5px solid #0d5ea8;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #092b55;
+        }
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        section {
+            background: white;
+            padding: 42px;
+            margin-bottom: 30px;
+            border-radius: 18px;
+            box-shadow: 0 8px 30px rgba(20, 50, 90, 0.07);
+        }
+
+        section h2 {
+            color: #0b2d5c;
+            font-size: clamp(1.6rem, 3vw, 2.25rem);
+            line-height: 1.3;
+            margin-bottom: 22px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        section h3 {
+            color: #0d5ea8;
+            font-size: 1.45rem;
+            margin: 30px 0 15px;
+        }
+
+        section p {
+            margin-bottom: 17px;
+        }
+
+        strong {
+            color: #0a3569;
+        }
+
+        .highlight {
+            background: #f8f5e8;
+            border-left: 5px solid #d4af37;
+            padding: 20px 24px;
+            margin: 25px 0;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .three-points {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin: 25px 0;
+        }
+
+        .point {
+            background: #f3f7fc;
+            border: 1px solid #dce6f2;
+            padding: 22px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: bold;
+            color: #123b6b;
+        }
+
+        /* =========================
+           LISTS
+        ========================= */
+
+        ul {
+            padding-left: 25px;
+            margin: 18px 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        /* =========================
+           QUESTIONS
+        ========================= */
+
+        .questions {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .question {
+            background: #f7f9fc;
+            padding: 16px 20px;
+            border-radius: 8px;
+            border: 1px solid #e0e7f0;
+            font-weight: bold;
+            color: #173d68;
+        }
+
+        /* =========================
+           VISION
+        ========================= */
+
+        .vision {
+            background: linear-gradient(135deg, #09244d, #0d4c8f);
+            color: white;
+            border-left: 0;
+        }
+
+        .vision h2 {
+            color: white;
+            border-bottom-color: rgba(255,255,255,0.25);
+        }
+
+        .vision strong {
+            color: #f1d36a;
+        }
+
+        .vision .highlight {
+            background: rgba(255,255,255,0.08);
+            border-left-color: #d4af37;
+        }
+
+        /* =========================
+           TABLE
+        ========================= */
+
+        .table-wrapper {
+            overflow-x: auto;
+            margin-top: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 700px;
+            background: white;
+        }
+
+        th {
+            background: #0b2d5c;
+            color: white;
+            padding: 16px;
+            text-align: left;
+            font-size: 1rem;
+        }
+
+        td {
+            padding: 14px 16px;
+            border: 1px solid #dfe6ee;
+            vertical-align: top;
+        }
+
+        tr:nth-child(even) td {
+            background: #f6f9fc;
+        }
+
+        .table-note {
+            margin-top: 18px;
+            font-style: italic;
+            color: #59697d;
+        }
+
+        /* =========================
+           FINAL MESSAGE
+        ========================= */
+
+        .final-message {
+            text-align: center;
+            padding: 50px 30px;
+            background: #f8f5e8;
+            border: 2px solid #d4af37;
+        }
+
+        .final-message h2 {
+            border: 0;
+            color: #0b2d5c;
+        }
+
+        .motto {
+            font-size: clamp(1.15rem, 2.5vw, 1.55rem);
+            font-weight: bold;
+            color: #0b2d5c;
+            margin: 25px auto;
+            max-width: 900px;
+        }
+
+        .hashtags {
+            margin-top: 25px;
+            color: #49627e;
+            line-height: 2;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #071a3d;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 50px;
+        }
+
+        footer .footer-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            color: #c9d5e5;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 800px) {
+
+            header {
+                padding: 40px 18px 35px;
+            }
+
+            nav a {
+                padding: 10px 9px;
+                font-size: 0.82rem;
+            }
+
+            main {
+                margin-top: 25px;
+            }
+
+            section,
+            .intro {
+                padding: 25px 20px;
+                border-radius: 12px;
+            }
+
+            .three-points {
+                grid-template-columns: 1fr;
+            }
+
+            .questions {
+                grid-template-columns: 1fr;
+            }
+
+            table {
+                min-width: 650px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<header id="top">
-  <div class="header-inner">
-    <div class="flag-symbol">🇬🇷</div>
+<header>
+    <div class="header-inner">
+        <div class="eyebrow">Πρόταση διοικητικής οργάνωσης</div>
 
-    <h1>ΕΛΛΗΝΙΚΕΣ ΠΟΛΙΤΕΙΕΣ</h1>
+        <h1>ΕΛΛΗΝΙΚΕΣ ΠΟΛΙΤΕΙΕΣ</h1>
 
-    <h2>Νέα πρόταση για διοικητική οργάνωση της Ελλάδας</h2>
-
-    <p class="header-intro">
-      Ένα πολυκεντρικό και αποκεντρωμένο μοντέλο,
-      με Ισχυρό Εθνικό Κράτος, ισχυρές Ελληνικές Πολιτείες
-      και ενεργό πολίτη.
-    </p>
-  </div>
+        <p class="subtitle">
+            Νέα πρόταση για διοικητική οργάνωση της Ελλάδας
+        </p>
+    </div>
 </header>
 
 <nav>
-  <div class="nav-inner">
-    <a href="#proposal">Η Πρόταση</a>
-    <a href="#states">Ελληνικές Πολιτείες</a>
-    <a href="#economy">Οικονομία</a>
-    <a href="#democracy">Δημοκρατία</a>
-    <a href="#ai">Τεχνητή Νοημοσύνη</a>
-    <a href="#elections">Εκλογικό Σύστημα</a>
-    <a href="#security">Ασφάλεια</a>
-    <a href="#institutions">Θεσμοί</a>
-    <a href="#vision">Το Όραμα</a>
-  </div>
+    <div class="nav-inner">
+        <a href="#proposal">Η Πρόταση</a>
+        <a href="#states">Ελληνικές Πολιτείες</a>
+        <a href="#democracy">Δημοκρατία</a>
+        <a href="#ai">Τεχνητή Νοημοσύνη</a>
+        <a href="#institutions">Θεσμοί</a>
+        <a href="#vision">Το Όραμα</a>
+    </div>
 </nav>
 
 <main>
 
-  <!-- Η ΠΡΟΤΑΣΗ -->
-  <section id="proposal" class="hero">
-    <h2>Νέα πρόταση για διοικητική οργάνωση της Ελλάδας</h2>
+    <!-- ΕΙΣΑΓΩΓΗ -->
 
-    <p>
-      Η πρόταση των <strong>«Ελληνικών Πολιτειών»</strong> βασίζεται
-      σε ένα πολυκεντρικό και αποκεντρωμένο μοντέλο, με
-      <strong>Ισχυρό Εθνικό Κράτος</strong> και ισχυρές Ελληνικές Πολιτείες,
-      με ουσιαστική διοικητική και οικονομική αυτονομία
-      <strong>μέσα στο ενιαίο Ελληνικό Κράτος</strong>.
-    </p>
+    <div class="intro" id="proposal">
 
-    <p>
-      Η Ελλάδα χρειάζεται ένα <strong>νέο διοικητικό μοντέλο</strong>,
-      προσαρμοσμένο στη γεωγραφία, στις πραγματικές ανάγκες των
-      τοπικών κοινωνιών και στις δυνατότητες της εποχής της
-      Τεχνητής Νοημοσύνης.
-    </p>
+        <h2>Νέα πρόταση για διοικητική οργάνωση της Ελλάδας</h2>
 
-    <div class="principle">
-      Ό,τι μπορεί να αποφασιστεί αποτελεσματικά τοπικά,
-      δεν πρέπει να αποφασίζεται από το κέντρο.
-    </div>
-  </section>
+        <p class="lead">
+            Η πρόταση των <strong>«Ελληνικών Πολιτειών»</strong> βασίζεται σε
+            ένα πολυκεντρικό και αποκεντρωμένο μοντέλο, με
+            <strong>Ισχυρό Εθνικό Κράτος</strong> και ισχυρές Ελληνικές
+            Πολιτείες, με ουσιαστική διοικητική και οικονομική αυτονομία
+            <strong>μέσα στο ενιαίο Ελληνικό Κράτος</strong>.
+        </p>
 
+        <p>
+            Η Ελλάδα χρειάζεται ένα <strong>νέο διοικητικό μοντέλο</strong>
+            προσαρμοσμένο στη γεωγραφία, στις πραγματικές ανάγκες των
+            τοπικών κοινωνιών και στις δυνατότητες της εποχής της
+            Τεχνητής Νοημοσύνης.
+        </p>
 
-  <!-- ΙΣΧΥΡΟ ΕΘΝΙΚΟ ΚΡΑΤΟΣ -->
-  <section>
-    <h2>ΙΣΧΥΡΟ ΕΘΝΙΚΟ ΚΡΑΤΟΣ</h2>
+        <div class="principle">
+            Ό,τι μπορεί να αποφασιστεί αποτελεσματικά τοπικά,
+            δεν πρέπει να αποφασίζεται από το κέντρο.
+        </div>
 
-    <p>
-      Στην αποκλειστική εθνική αρμοδιότητα θα ανήκουν η
-      <strong>
-        Άμυνα, η Εξωτερική Πολιτική, η Εθνική Ασφάλεια,
-        η ενεργειακή στρατηγική, τα εθνικά δίκτυα και οι βασικές
-        στρατηγικές υποδομές, η Ναυτιλία εθνικής στρατηγικής σημασίας,
-        το νόμισμα και η δημοσιονομική σταθερότητα
-      </strong>,
-      καθώς και το εθνικό πλαίσιο και τα πρότυπα της Παιδείας.
-    </p>
-  </section>
-
-
-  <!-- ΕΛΛΗΝΙΚΕΣ ΠΟΛΙΤΕΙΕΣ -->
-  <section id="states">
-    <h2>🏛️ ΕΛΛΗΝΙΚΕΣ ΠΟΛΙΤΕΙΕΣ — ΠΡΑΓΜΑΤΙΚΗ ΑΠΟΚΕΝΤΡΩΣΗ</h2>
-
-    <p>
-      Οι σημερινές διοικητικές δομές χρειάζονται συνολικό επανασχεδιασμό.
-    </p>
-
-    <p>
-      <strong>
-        Προτείνουμε τη δημιουργία ισχυρών Ελληνικών Πολιτειών,
-        με σαφώς καθορισμένα γεωγραφικά όρια, εκλεγμένη Πολιτειακή Βουλή
-        και Πολιτειακή Κυβέρνηση.
-      </strong>
-    </p>
-
-    <p>
-      Κάθε Πολιτεία θα διαθέτει συγκεκριμένες αρμοδιότητες και
-      <strong>
-        διοικητική και οικονομική αυτονομία μέσα στο ενιαίο Ελληνικό Κράτος
-      </strong>,
-      στους τομείς που μπορεί να γνωρίζει και να διαχειρίζεται
-      αποτελεσματικότερα από την κεντρική διοίκηση.
-    </p>
-
-    <p>
-      Ενδεικτικά, στις αρμοδιότητές τους θα περιλαμβάνονται η
-      <strong>
-        Υγεία, η διοίκηση της Εκπαίδευσης μέσα στο εθνικό πλαίσιο,
-        ο Τουρισμός, η Γεωργία, οι Μεταφορές, το Περιβάλλον,
-        η Χωροταξία, η Αλιεία, η τοπική οικονομική ανάπτυξη
-        και οι περιφερειακές υποδομές
-      </strong>.
-    </p>
-
-    <div class="cards">
-      <div class="card">
-        <h3>🏛️ Πολιτειακή Βουλή</h3>
-        <p>Εκλεγμένη αντιπροσωπευτική δομή σε επίπεδο Πολιτείας.</p>
-      </div>
-
-      <div class="card">
-        <h3>⚙️ Πολιτειακή Κυβέρνηση</h3>
-        <p>Διοίκηση με σαφείς αρμοδιότητες και ευθύνη απέναντι στους πολίτες.</p>
-      </div>
-
-      <div class="card">
-        <h3>💶 Οικονομική αυτονομία</h3>
-        <p>Πόροι που επιτρέπουν στις Πολιτείες να ασκούν αποτελεσματικά τις αρμοδιότητές τους.</p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ΟΙΚΟΝΟΜΙΑ -->
-  <section id="economy">
-    <h2>💰 Οικονομική αυτοτέλεια — «όσο παράγεις, τόσο κρατάς»</h2>
-
-    <p>
-      Οι Ελληνικές Πολιτείες πρέπει να έχουν πραγματική οικονομική
-      δυνατότητα να ασκούν τις αρμοδιότητές τους.
-    </p>
-
-    <p>
-      Μέρος των φορολογικών εσόδων θα παραμένει στην Πολιτεία όπου
-      παράγεται, ώστε η τοπική ανάπτυξη να συνδέεται άμεσα με την
-      ποιότητα των υπηρεσιών και των υποδομών.
-    </p>
-
-    <p>
-      Παράλληλα, θα υπάρχει
-      <strong>
-        εθνικός μηχανισμός αλληλεγγύης και αναδιανομής
-      </strong>,
-      ώστε καμία περιοχή, ανεξάρτητα από γεωγραφική θέση ή οικονομική
-      δυνατότητα, να μην εγκαταλείπεται.
-    </p>
-
-    <div class="gold-box">
-      <p><strong>Αυτονομία δεν σημαίνει εγκατάλειψη.</strong></p>
-      <p><strong>Ανάπτυξη δεν σημαίνει ανισότητα.</strong></p>
-      <p><strong>Εθνική αλληλεγγύη δεν σημαίνει συγκεντρωτισμός.</strong></p>
-    </div>
-  </section>
-
-
-  <!-- ΓΡΑΦΕΙΟΚΡΑΤΙΑ -->
-  <section>
-    <h2>🧭 Λιγότερη γραφειοκρατία — καθαρές αρμοδιότητες</h2>
-
-    <p>
-      Η νέα διοικητική οργάνωση πρέπει να καταργήσει επικαλύψεις,
-      περιττές υπηρεσίες και αλληλεπικαλυπτόμενες αρμοδιότητες.
-    </p>
-
-    <p>
-      Οι σημερινές δομές θα επανεξεταστούν συνολικά, με στόχο ο πολίτης
-      να γνωρίζει πάντοτε
-      <strong>
-        ποιος αποφασίζει, ποιος υλοποιεί, ποιος πληρώνει και ποιος λογοδοτεί
-      </strong>.
-    </p>
-
-    <div class="quote">
-      Λιγότερο κράτος δεν σημαίνει λιγότερες υπηρεσίες.
-      <br>
-      Σημαίνει λιγότερη γραφειοκρατία και καλύτερες υπηρεσίες.
-    </div>
-  </section>
-
-
-  <!-- ΔΗΜΟΚΡΑΤΙΑ -->
-  <section id="democracy">
-    <h2>🗳️ Ο πολίτης δεν ψηφίζει μόνο κάθε τέσσερα χρόνια</h2>
-
-    <p>
-      Η τεχνολογία μπορεί να δημιουργήσει ένα νέο περιβάλλον
-      <strong>Άμεσης Δημοκρατίας και e-Democracy</strong>,
-      όπου ο πολίτης δεν θα είναι απλώς ψηφοφόρος αλλά ενεργός συμμέτοχος.
-    </p>
-
-    <h3>Προτείνουμε:</h3>
-
-    <ul>
-      <li>
-        <strong>Ηλεκτρονικές δημόσιες διαβουλεύσεις</strong>
-        πριν από σημαντικές νομοθετικές και διοικητικές αποφάσεις.
-      </li>
-
-      <li>
-        <strong>Ψηφιακές υπογραφές</strong>
-        για λαϊκές πρωτοβουλίες.
-      </li>
-
-      <li>
-        <strong>Δημοψηφίσματα</strong>,
-        σε τοπικό, πολιτειακό και εθνικό επίπεδο,
-        όπου αυτό προβλέπεται θεσμικά.
-      </li>
-
-      <li>
-        <strong>Συμμετοχικούς προϋπολογισμούς</strong>,
-        ώστε οι πολίτες να αποφασίζουν για μέρος των διαθέσιμων δημόσιων πόρων.
-      </li>
-
-      <li>
-        <strong>Ψηφιακή κατάθεση προτάσεων πολιτών</strong>,
-        με συγκεκριμένη διαδικασία αξιολόγησης και υποχρέωση απάντησης
-        από την αρμόδια αρχή.
-      </li>
-
-      <li>
-        <strong>Δημόσια ψηφιακή παρακολούθηση των αποφάσεων και των έργων</strong>,
-        από τη στιγμή που λαμβάνονται μέχρι την ολοκλήρωση και αξιολόγηση
-        του αποτελέσματος.
-      </li>
-    </ul>
-
-    <h3>Ο πολίτης πρέπει να μπορεί να γνωρίζει:</h3>
-
-    <div class="questions">
-      <div class="question">Τι αποφασίστηκε;</div>
-      <div class="question">Ποιος το αποφάσισε;</div>
-      <div class="question">Γιατί αποφασίστηκε;</div>
-      <div class="question">Πόσο κοστίζει;</div>
-      <div class="question">Ποιος είναι υπεύθυνος;</div>
-      <div class="question">Πότε θα ολοκληρωθεί;</div>
-      <div class="question">Ποιο ήταν τελικά το αποτέλεσμα;</div>
-    </div>
-  </section>
-
-
-  <!-- AI -->
-  <section id="ai">
-    <h2>🤖 Τεχνητή Νοημοσύνη στην υπηρεσία του πολίτη</h2>
-
-    <p>
-      Η Τεχνητή Νοημοσύνη μπορεί να χρησιμοποιηθεί για την ταχύτερη
-      εξυπηρέτηση των πολιτών, την ανάλυση δεδομένων, την πρόβλεψη αναγκών,
-      τον εντοπισμό σπατάλης, την αξιολόγηση δημόσιων έργων και τη βελτίωση
-      της λειτουργίας των υπηρεσιών.
-    </p>
-
-    <div class="quote">
-      Η Τεχνητή Νοημοσύνη πρέπει να είναι εργαλείο του πολίτη
-      και των θεσμών — όχι υποκατάστατο της δημοκρατίας.
-    </div>
-  </section>
-
-
-  <!-- ΨΗΦΙΑΚΗ ΑΣΦΑΛΕΙΑ -->
-  <section>
-    <h2>🛡️ Ασφάλεια και προστασία της ψηφιακής δημοκρατίας</h2>
-
-    <p>
-      Απαιτεί ισχυρή
-      <strong>
-        κυβερνοασφάλεια, ασφαλή ταυτοποίηση, προστασία προσωπικών δεδομένων,
-        διαφάνεια, ανεξάρτητο έλεγχο και δυνατότητα επαλήθευσης των αποτελεσμάτων
-      </strong>.
-    </p>
-
-    <p>
-      Παράλληλα, κανένας πολίτης δεν πρέπει να αποκλείεται επειδή
-      δεν διαθέτει ψηφιακές γνώσεις, πρόσβαση ή εξοικείωση με την τεχνολογία.
-    </p>
-
-    <p>
-      Η ψηφιακή συμμετοχή πρέπει να
-      <strong>
-        προσθέτει δημοκρατία και όχι να δημιουργεί νέο κοινωνικό αποκλεισμό.
-      </strong>
-    </p>
-  </section>
-
-
-  <!-- ΕΚΛΟΓΙΚΟ -->
-  <section id="elections">
-    <h2>🗳️ Νέο εκλογικό σύστημα — ΤΕΛΟΣ ΣΤΗΝ ΠΟΛΙΤΙΚΗ ΩΣ ΙΣΟΒΙΟ ΕΠΑΓΓΕΛΜΑ</h2>
-
-    <p>
-      Ένα πιθανό μοντέλο είναι ένα
-      <strong>μεικτό εκλογικό σύστημα</strong>,
-      με συνδυασμό αναλογικής εκπροσώπησης και μονοεδρικών
-      εκλογικών περιφερειών.
-    </p>
-
-    <div class="gold-box">
-      <h3>50% αναλογική εκπροσώπηση — 50% μονοεδρικές περιφέρειες</h3>
-
-      <p>
-        Με αυτόν τον τρόπο συνδυάζεται η αντιπροσωπευτικότητα
-        με την άμεση σχέση του εκλεγμένου εκπροσώπου με μια συγκεκριμένη
-        περιοχή και τους πολίτες της.
-      </p>
     </div>
 
-    <p>
-      Παράλληλα, προτείνεται η θέσπιση
-      <strong>αυστηρών ορίων θητειών</strong>,
-      ώστε η πολιτική να μην μετατρέπεται σε ισόβιο επάγγελμα.
-    </p>
 
-    <p>
-      Στόχος είναι η ανανέωση του πολιτικού προσωπικού
-      και η επιστροφή της πολιτικής στην κοινωνία.
-    </p>
-  </section>
+    <!-- ΕΘΝΙΚΟ ΚΡΑΤΟΣ -->
 
+    <section>
 
-  <!-- ΕΘΝΙΚΟ ΣΥΜΒΟΥΛΙΟ -->
-  <section id="security">
-    <h2>🛡️ Εθνικό Συμβούλιο Ασφάλειας</h2>
+        <h2>ΙΣΧΥΡΟ ΕΘΝΙΚΟ ΚΡΑΤΟΣ</h2>
 
-    <p>
-      Προτείνεται η δημιουργία
-      <strong>Εθνικού Συμβουλίου Ασφάλειας</strong>,
-      με διακομματική και, όπου απαιτείται, τεχνοκρατική συμμετοχή.
-    </p>
+        <p>
+            Στην αποκλειστική εθνική αρμοδιότητα θα ανήκουν η
+            <strong>
+                Άμυνα, η Εξωτερική Πολιτική, η Εθνική Ασφάλεια,
+                η ενεργειακή στρατηγική, τα εθνικά δίκτυα και οι
+                βασικές στρατηγικές υποδομές, η Ναυτιλία εθνικής
+                στρατηγικής σημασίας, το νόμισμα και η δημοσιονομική
+                σταθερότητα
+            </strong>,
+            καθώς και το εθνικό πλαίσιο και τα πρότυπα της Παιδείας.
+        </p>
 
-    <p>
-      Το Συμβούλιο θα ασχολείται με ζητήματα εθνικής ασφάλειας,
-      άμυνας, ενεργειακής ασφάλειας, προστασίας κρίσιμων υποδομών,
-      κυβερνοασφάλειας και αντιμετώπισης στρατηγικών κινδύνων.
-    </p>
-
-    <p>
-      Στόχος του θα είναι η
-      <strong>
-        θεσμική συνέχεια και ο στρατηγικός συντονισμός της χώρας
-        πέρα από την εκάστοτε κυβέρνηση
-      </strong>.
-    </p>
-  </section>
+    </section>
 
 
-  <!-- ΘΕΣΜΟΙ -->
-  <section id="institutions">
-    <h2>⚖️ Ισχυροί θεσμοί ελέγχου</h2>
+    <!-- ΕΛΛΗΝΙΚΕΣ ΠΟΛΙΤΕΙΕΣ -->
 
-    <p>
-      Η αποκέντρωση χωρίς έλεγχο μπορεί να οδηγήσει
-      σε πολυδιάσπαση και τοπικές αυθαιρεσίες.
-    </p>
+    <section id="states">
 
-    <p>
-      Γι' αυτό οι Ελληνικές Πολιτείες χρειάζονται ισχυρούς
-      και ανεξάρτητους μηχανισμούς ελέγχου, διαφάνειας και λογοδοσίας.
-    </p>
+        <h2>🏛️ ΕΛΛΗΝΙΚΕΣ ΠΟΛΙΤΕΙΕΣ — ΠΡΑΓΜΑΤΙΚΗ ΑΠΟΚΕΝΤΡΩΣΗ</h2>
 
-    <p>
-      Κάθε επίπεδο εξουσίας θα πρέπει να ελέγχεται
-      θεσμικά, οικονομικά και δικαστικά.
-    </p>
+        <p>
+            Οι σημερινές διοικητικές δομές χρειάζονται συνολικό
+            επανασχεδιασμό.
+        </p>
 
-    <div class="quote">
-      Αποκέντρωση δεν σημαίνει ανεξέλεγκτη εξουσία.
-      <br>
-      Σημαίνει εξουσία πιο κοντά στον πολίτη,
-      αλλά και περισσότερο ελεγχόμενη από αυτόν.
-    </div>
-  </section>
+        <p>
+            <strong>
+                Προτείνουμε τη δημιουργία ισχυρών Ελληνικών Πολιτειών,
+                με σαφώς καθορισμένα γεωγραφικά όρια, εκλεγμένη
+                Πολιτειακή Βουλή και Πολιτειακή Κυβέρνηση.
+            </strong>
+        </p>
 
+        <p>
+            Κάθε Πολιτεία θα διαθέτει συγκεκριμένες αρμοδιότητες και
+            <strong>
+                διοικητική και οικονομική αυτονομία μέσα στο ενιαίο
+                Ελληνικό Κράτος
+            </strong>,
+            στους τομείς που μπορεί να γνωρίζει και να διαχειρίζεται
+            αποτελεσματικότερα από την κεντρική διοίκηση.
+        </p>
 
-  <!-- ΠΕΡΑ ΑΠΟ ΤΟΝ ΚΟΜΜΑΤΙΚΟ ΔΙΑΧΩΡΙΣΜΟ -->
-  <section>
-    <h2>Πέρα από τον κομματικό διαχωρισμό</h2>
+        <p>
+            Ενδεικτικά, στις αρμοδιότητές τους θα περιλαμβάνονται η
+            <strong>
+                Υγεία, η διοίκηση της Εκπαίδευσης μέσα στο εθνικό πλαίσιο,
+                ο Τουρισμός, η Γεωργία, οι Μεταφορές, το Περιβάλλον,
+                η Χωροταξία, η Αλιεία, η τοπική οικονομική ανάπτυξη
+                και οι περιφερειακές υποδομές
+            </strong>.
+        </p>
 
-    <p>
-      Η Ελλάδα δεν μπορεί να σχεδιάσει το κράτος του 21ου αιώνα
-      με τα πολιτικά εργαλεία του 20ού αιώνα.
-    </p>
-
-    <p>
-      <strong>
-        Ο πολίτης δεν πρέπει να υποχρεώνεται να αποκτήσει κομματική ταυτότητα
-        για να συμμετέχει στη δημόσια ζωή.
-      </strong>
-    </p>
-
-    <p>
-      Στην εποχή της Τεχνητής Νοημοσύνης,
-      <strong>
-        πρέπει να περάσουμε από τον μόνιμο διαχωρισμό
-        «Αριστερά – Δεξιά» στην αξιολόγηση των πραγματικών προβλημάτων
-        και των αποτελεσματικών λύσεων.
-      </strong>
-    </p>
-  </section>
+    </section>
 
 
-  <!-- ΜΕΤΑΒΑΣΗ -->
-  <section>
-    <h2>🔄 Σταδιακή μετάβαση</h2>
+    <!-- ΟΙΚΟΝΟΜΙΑ -->
 
-    <p>
-      Η μετάβαση στις Ελληνικές Πολιτείες απαιτεί
-      <strong>
-        συνταγματική και θεσμική προετοιμασία, σαφή κατανομή αρμοδιοτήτων,
-        μεταφορά πόρων και φορολογικών δυνατοτήτων, ισχυρή δημόσια διοίκηση,
-        σύγχρονα ψηφιακά συστήματα και ανεξάρτητους μηχανισμούς ελέγχου
-      </strong>.
-    </p>
+    <section>
 
-    <p>
-      Απαιτεί επίσης πολιτική και κοινωνική συναίνεση σε βάθος χρόνου.
-    </p>
+        <h2>💰 Οικονομική αυτοτέλεια — «όσο παράγεις, τόσο κρατάς»</h2>
 
-    <div class="quote">
-      Δεν είναι μεταρρύθμιση μιας κυβέρνησης.
-      Είναι αλλαγή του τρόπου με τον οποίο οργανώνεται
-      και λειτουργεί η Ελληνική Πολιτεία.
-    </div>
-  </section>
+        <p>
+            Οι Ελληνικές Πολιτείες πρέπει να έχουν πραγματική οικονομική
+            δυνατότητα να ασκούν τις αρμοδιότητές τους.
+        </p>
 
+        <p>
+            Μέρος των φορολογικών εσόδων θα παραμένει στην Πολιτεία
+            όπου παράγεται, ώστε η τοπική ανάπτυξη να συνδέεται άμεσα
+            με την ποιότητα των υπηρεσιών και των υποδομών.
+        </p>
 
-  <!-- ΟΡΑΜΑ -->
-  <section id="vision" class="vision">
-    <h2>Το όραμα των Ελληνικών Πολιτειών</h2>
+        <p>
+            Παράλληλα, θα υπάρχει
+            <strong>
+                εθνικός μηχανισμός αλληλεγγύης και αναδιανομής
+            </strong>,
+            ώστε καμία περιοχή, ανεξάρτητα από γεωγραφική θέση ή
+            οικονομική δυνατότητα, να μην εγκαταλείπεται.
+        </p>
 
-    <p>
-      Οι <strong>Ελληνικές Πολιτείες</strong> σημαίνουν ένα
-      <strong>
-        Ισχυρό Εθνικό Κράτος με αποκεντρωμένη διοίκηση,
-        ισχυρές και οικονομικά αυτοτελείς Ελληνικές Πολιτείες,
-        άμεση συμμετοχή των πολιτών και αυστηρούς θεσμούς ελέγχου.
-      </strong>
-    </p>
+        <div class="three-points">
+            <div class="point">Αυτονομία δεν σημαίνει εγκατάλειψη.</div>
+            <div class="point">Ανάπτυξη δεν σημαίνει ανισότητα.</div>
+            <div class="point">Εθνική αλληλεγγύη δεν σημαίνει συγκεντρωτισμός.</div>
+        </div>
 
-    <p>
-      Ένα κράτος όπου ο πολίτης δεν χρειάζεται να αναζητά
-      «ποιο κόμμα έχει την άκρη» για να λύσει ένα πρόβλημα,
-      αλλά γνωρίζει
-      <strong>
-        ποιος θεσμός είναι υπεύθυνος, ποιος αποφασίζει και ποιος λογοδοτεί.
-      </strong>
-    </p>
-
-    <div class="slogan">
-      Από το συγκεντρωτικό κράτος στο πολυκεντρικό κράτος.<br>
-      Από την κομματική εξάρτηση στη θεσμική λογοδοσία.<br>
-      Από τη γραφειοκρατία στην αποτελεσματικότητα.<br>
-      Από τον πολίτη-ψηφοφόρο στον πολίτη-συμμέτοχο.
-    </div>
-  </section>
+    </section>
 
 
-  <!-- ΤΕΛΙΚΟ ΜΗΝΥΜΑ -->
-  <section class="final-statement">
-    <h2>
-      ΙΣΧΥΡΟ ΕΘΝΙΚΟ ΚΡΑΤΟΣ — ΙΣΧΥΡΕΣ ΕΛΛΗΝΙΚΕΣ ΠΟΛΙΤΕΙΕΣ —
-      ΕΝΕΡΓΟΣ ΠΟΛΙΤΗΣ — ΑΜΕΣΗ ΔΗΜΟΚΡΑΤΙΑ
-    </h2>
+    <!-- ΓΡΑΦΕΙΟΚΡΑΤΙΑ -->
 
-    <p>
-      <strong>
-        Η Ελλάδα του 21ου αιώνα χρειάζεται ένα κράτος
-        που υπηρετεί τον πολίτη και όχι έναν πολίτη
-        που υπηρετεί το κράτος.
-      </strong>
-    </p>
-  </section>
+    <section>
+
+        <h2>🧭 Λιγότερη γραφειοκρατία — καθαρές αρμοδιότητες</h2>
+
+        <p>
+            Η νέα διοικητική οργάνωση πρέπει να καταργήσει επικαλύψεις,
+            περιττές υπηρεσίες και αλληλεπικαλυπτόμενες αρμοδιότητες.
+        </p>
+
+        <p>
+            Οι σημερινές δομές θα επανεξεταστούν συνολικά, με στόχο
+            ο πολίτης να γνωρίζει πάντοτε
+            <strong>
+                ποιος αποφασίζει, ποιος υλοποιεί, ποιος πληρώνει
+                και ποιος λογοδοτεί
+            </strong>.
+        </p>
+
+        <div class="highlight">
+            Λιγότερο κράτος δεν σημαίνει λιγότερες υπηρεσίες.
+            <br>
+            Σημαίνει λιγότερη γραφειοκρατία και καλύτερες υπηρεσίες.
+        </div>
+
+    </section>
 
 
-  <!-- ΚΑΤΑΝΟΜΗ ΑΡΜΟΔΙΟΤΗΤΩΝ -->
-  <section>
-    <h2>📊 ΕΝΔΕΙΚΤΙΚΗ ΚΑΤΑΝΟΜΗ ΑΡΜΟΔΙΟΤΗΤΩΝ</h2>
+    <!-- ΔΗΜΟΚΡΑΤΙΑ -->
 
-    <p>
-      Η κατανομή αυτή είναι ενδεικτική και αποτελεί βάση
-      για περαιτέρω θεσμική και νομική επεξεργασία.
-    </p>
+    <section id="democracy">
 
-    <div class="table-wrapper">
-      <table>
-        <thead>
-          <tr>
-            <th>Ισχυρό Εθνικό Κράτος</th>
-            <th>Ελληνικές Πολιτείες</th>
-            <th>Τοπικό επίπεδο</th>
-          </tr>
-        </thead>
+        <h2>🗳️ Ο πολίτης δεν ψηφίζει μόνο κάθε τέσσερα χρόνια</h2>
 
-        <tbody>
-          <tr>
-            <td>Άμυνα</td>
-            <td>Υγεία και διοίκηση υγειονομικών υπηρεσιών</td>
-            <td>Καθημερινές τοπικές υπηρεσίες</td>
-          </tr>
+        <p>
+            Η τεχνολογία μπορεί να δημιουργήσει ένα νέο περιβάλλον
+            <strong>Άμεσης Δημοκρατίας και e-Democracy</strong>,
+            όπου ο πολίτης δεν θα είναι απλώς ψηφοφόρος αλλά ενεργός
+            συμμέτοχος.
+        </p>
 
-          <tr>
-            <td>Εξωτερική πολιτική</td>
-            <td>Διοίκηση Εκπαίδευσης</td>
-            <td>Τοπική εξυπηρέτηση πολιτών</td>
-          </tr>
+        <h3>Προτείνουμε:</h3>
 
-          <tr>
-            <td>Εθνική ασφάλεια</td>
-            <td>Τουρισμός</td>
-            <td>Τοπικές υποδομές</td>
-          </tr>
+        <ul>
+            <li>
+                <strong>Ηλεκτρονικές δημόσιες διαβουλεύσεις</strong>
+                πριν από σημαντικές νομοθετικές και διοικητικές αποφάσεις.
+            </li>
 
-          <tr>
-            <td>Εθνική ενεργειακή στρατηγική</td>
-            <td>Γεωργία και τοπική παραγωγή</td>
-            <td>Τοπικές κοινωνικές ανάγκες</td>
-          </tr>
+            <li>
+                <strong>Ψηφιακές υπογραφές</strong>
+                για λαϊκές πρωτοβουλίες.
+            </li>
 
-          <tr>
-            <td>Εθνικά δίκτυα και στρατηγικές υποδομές</td>
-            <td>Περιβάλλον</td>
-            <td>Τοπικές παρεμβάσεις</td>
-          </tr>
+            <li>
+                <strong>Δημοψηφίσματα</strong>,
+                σε τοπικό, πολιτειακό και εθνικό επίπεδο,
+                όπου αυτό προβλέπεται θεσμικά.
+            </li>
 
-          <tr>
-            <td>Νομισματική και δημοσιονομική σταθερότητα</td>
-            <td>Χωροταξία</td>
-            <td>Πολιτιστικές και κοινοτικές δράσεις</td>
-          </tr>
+            <li>
+                <strong>Συμμετοχικούς προϋπολογισμούς</strong>,
+                ώστε οι πολίτες να αποφασίζουν για μέρος των διαθέσιμων
+                δημόσιων πόρων.
+            </li>
 
-          <tr>
-            <td>Εθνική στρατηγική Ναυτιλίας</td>
-            <td>Περιφερειακές μεταφορές</td>
-            <td>—</td>
-          </tr>
+            <li>
+                <strong>Ψηφιακή κατάθεση προτάσεων πολιτών</strong>,
+                με συγκεκριμένη διαδικασία αξιολόγησης και υποχρέωση
+                απάντησης από την αρμόδια αρχή.
+            </li>
 
-          <tr>
-            <td>Εθνικό πλαίσιο και πρότυπα Παιδείας</td>
-            <td>Αλιεία</td>
-            <td>—</td>
-          </tr>
+            <li>
+                <strong>
+                    Δημόσια ψηφιακή παρακολούθηση των αποφάσεων και των έργων
+                </strong>,
+                από τη στιγμή που λαμβάνονται μέχρι την ολοκλήρωση και
+                αξιολόγηση του αποτελέσματος.
+            </li>
+        </ul>
 
-          <tr>
-            <td>Εθνικά πρότυπα κυβερνοασφάλειας</td>
-            <td>Τοπική οικονομική ανάπτυξη</td>
-            <td>—</td>
-          </tr>
+        <h3>Ο πολίτης πρέπει να μπορεί να γνωρίζει:</h3>
 
-          <tr>
-            <td>Εθνικές πολιτικές για στρατηγικές υποδομές</td>
-            <td>Περιφερειακές υποδομές</td>
-            <td>—</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+        <div class="questions">
+            <div class="question">Τι αποφασίστηκε;</div>
+            <div class="question">Ποιος το αποφάσισε;</div>
+            <div class="question">Γιατί αποφασίστηκε;</div>
+            <div class="question">Πόσο κοστίζει;</div>
+            <div class="question">Ποιος είναι υπεύθυνος;</div>
+            <div class="question">Πότε θα ολοκληρωθεί;</div>
+            <div class="question">Ποιο ήταν τελικά το αποτέλεσμα;</div>
+        </div>
+
+    </section>
+
+
+    <!-- AI -->
+
+    <section id="ai">
+
+        <h2>🤖 Τεχνητή Νοημοσύνη στην υπηρεσία του πολίτη</h2>
+
+        <p>
+            Η Τεχνητή Νοημοσύνη μπορεί να χρησιμοποιηθεί για την
+            ταχύτερη εξυπηρέτηση των πολιτών, την ανάλυση δεδομένων,
+            την πρόβλεψη αναγκών, τον εντοπισμό σπατάλης, την αξιολόγηση
+            δημόσιων έργων και τη βελτίωση της λειτουργίας των υπηρεσιών.
+        </p>
+
+        <div class="highlight">
+            Η Τεχνητή Νοημοσύνη πρέπει να είναι εργαλείο του πολίτη
+            και των θεσμών — όχι υποκατάστατο της δημοκρατίας.
+        </div>
+
+    </section>
+
+
+    <!-- ΨΗΦΙΑΚΗ ΑΣΦΑΛΕΙΑ -->
+
+    <section>
+
+        <h2>🛡️ Ασφάλεια και προστασία της ψηφιακής δημοκρατίας</h2>
+
+        <p>
+            Η ψηφιακή δημοκρατία δεν σημαίνει απλώς «ψηφίζουμε από
+            το κινητό».
+        </p>
+
+        <p>
+            Απαιτεί ισχυρή
+            <strong>
+                κυβερνοασφάλεια, ασφαλή ταυτοποίηση, προστασία προσωπικών
+                δεδομένων, διαφάνεια, ανεξάρτητο έλεγχο και δυνατότητα
+                επαλήθευσης των αποτελεσμάτων
+            </strong>.
+        </p>
+
+        <p>
+            Παράλληλα, κανένας πολίτης δεν πρέπει να αποκλείεται επειδή
+            δεν διαθέτει ψηφιακές γνώσεις, πρόσβαση ή εξοικείωση με
+            την τεχνολογία.
+        </p>
+
+        <div class="highlight">
+            Η ψηφιακή συμμετοχή πρέπει να προσθέτει δημοκρατία
+            και όχι να δημιουργεί νέο κοινωνικό αποκλεισμό.
+        </div>
+
+    </section>
+
+
+    <!-- ΕΚΛΟΓΙΚΟ ΣΥΣΤΗΜΑ -->
+
+    <section>
+
+        <h2>🗳️ Νέο εκλογικό σύστημα — ΤΕΛΟΣ ΣΤΗΝ ΠΟΛΙΤΙΚΗ ΩΣ ΙΣΟΒΙΟ ΕΠΑΓΓΕΛΜΑ</h2>
+
+        <p>
+            Ένα πιθανό μοντέλο είναι ένα
+            <strong>μεικτό εκλογικό σύστημα</strong>,
+            με συνδυασμό αναλογικής εκπροσώπησης και μονοεδρικών
+            εκλογικών περιφερειών.
+        </p>
+
+        <div class="highlight">
+            50% αναλογική εκπροσώπηση — 50% μονοεδρικές περιφέρειες.
+        </div>
+
+        <p>
+            Παράλληλα, προτείνεται η θέσπιση
+            <strong>αυστηρών ορίων θητειών</strong>,
+            ώστε η πολιτική να μην μετατρέπεται σε ισόβιο επάγγελμα.
+        </p>
+
+        <p>
+            Στόχος είναι η ανανέωση του πολιτικού προσωπικού και
+            η επιστροφή της πολιτικής στην κοινωνία.
+        </p>
+
+    </section>
+
+
+    <!-- ΕΘΝΙΚΟ ΣΥΜΒΟΥΛΙΟ -->
+
+    <section id="institutions">
+
+        <h2>🛡️ Εθνικό Συμβούλιο Ασφάλειας</h2>
+
+        <p>
+            Προτείνεται η δημιουργία
+            <strong>Εθνικού Συμβουλίου Ασφάλειας</strong>,
+            με διακομματική και, όπου απαιτείται, τεχνοκρατική συμμετοχή.
+        </p>
+
+        <p>
+            Το Συμβούλιο θα ασχολείται με ζητήματα εθνικής ασφάλειας,
+            άμυνας, ενεργειακής ασφάλειας, προστασίας κρίσιμων υποδομών,
+            κυβερνοασφάλειας και αντιμετώπισης στρατηγικών κινδύνων.
+        </p>
+
+        <p>
+            Στόχος του θα είναι η
+            <strong>
+                θεσμική συνέχεια και ο στρατηγικός συντονισμός της χώρας
+                πέρα από την εκάστοτε κυβέρνηση
+            </strong>.
+        </p>
+
+    </section>
+
+
+    <!-- ΘΕΣΜΟΙ ΕΛΕΓΧΟΥ -->
+
+    <section>
+
+        <h2>⚖️ Ισχυροί θεσμοί ελέγχου</h2>
+
+        <p>
+            Η αποκέντρωση χωρίς έλεγχο μπορεί να οδηγήσει σε
+            πολυδιάσπαση και τοπικές αυθαιρεσίες.
+        </p>
+
+        <p>
+            Γι' αυτό οι Ελληνικές Πολιτείες χρειάζονται ισχυρούς
+            και ανεξάρτητους μηχανισμούς ελέγχου, διαφάνειας
+            και λογοδοσίας.
+        </p>
+
+        <p>
+            Κάθε επίπεδο εξουσίας θα πρέπει να ελέγχεται θεσμικά,
+            οικονομικά και δικαστικά.
+        </p>
+
+        <div class="highlight">
+            Αποκέντρωση δεν σημαίνει ανεξέλεγκτη εξουσία.
+        </div>
+
+    </section>
+
+
+    <!-- ΠΕΡΑ ΑΠΟ ΚΟΜΜΑΤΑ -->
+
+    <section>
+
+        <h2>Πέρα από τον κομματικό διαχωρισμό</h2>
+
+        <p>
+            Η Ελλάδα δεν μπορεί να σχεδιάσει το κράτος του 21ου αιώνα
+            με τα πολιτικά εργαλεία του 20ού αιώνα.
+        </p>
+
+        <p>
+            <strong>
+                Ο πολίτης δεν πρέπει να υποχρεώνεται να αποκτήσει
+                κομματική ταυτότητα για να συμμετέχει στη δημόσια ζωή.
+            </strong>
+        </p>
+
+        <p>
+            Στην εποχή της Τεχνητής Νοημοσύνης,
+            <strong>
+                πρέπει να περάσουμε από τον μόνιμο διαχωρισμό
+                «Αριστερά – Δεξιά» στην αξιολόγηση των πραγματικών
+                προβλημάτων και των αποτελεσματικών λύσεων.
+            </strong>
+        </p>
+
+    </section>
+
+
+    <!-- ΜΕΤΑΒΑΣΗ -->
+
+    <section>
+
+        <h2>🔄 Σταδιακή μετάβαση</h2>
+
+        <p>
+            Η μετάβαση στις Ελληνικές Πολιτείες απαιτεί
+            <strong>
+                συνταγματική και θεσμική προετοιμασία, σαφή κατανομή
+                αρμοδιοτήτων, μεταφορά πόρων και φορολογικών δυνατοτήτων,
+                ισχυρή δημόσια διοίκηση, σύγχρονα ψηφιακά συστήματα
+                και ανεξάρτητους μηχανισμούς ελέγχου
+            </strong>.
+        </p>
+
+        <p>
+            Απαιτεί επίσης πολιτική και κοινωνική συναίνεση
+            σε βάθος χρόνου.
+        </p>
+
+        <div class="highlight">
+            Δεν είναι μεταρρύθμιση μιας κυβέρνησης.
+            Είναι αλλαγή του τρόπου με τον οποίο οργανώνεται
+            και λειτουργεί η Ελληνική Πολιτεία.
+        </div>
+
+    </section>
+
+
+    <!-- ΟΡΑΜΑ -->
+
+    <section class="vision" id="vision">
+
+        <h2>Το όραμα των Ελληνικών Πολιτειών</h2>
+
+        <p>
+            Οι <strong>Ελληνικές Πολιτείες</strong> σημαίνουν ένα
+            <strong>
+                Ισχυρό Εθνικό Κράτος με αποκεντρωμένη διοίκηση,
+                ισχυρές και οικονομικά αυτοτελείς Ελληνικές Πολιτείες,
+                άμεση συμμετοχή των πολιτών και αυστηρούς θεσμούς ελέγχου
+            </strong>.
+        </p>
+
+        <div class="highlight">
+            <strong>
+                Η Ελλάδα του 21ου αιώνα χρειάζεται ένα κράτος που
+                υπηρετεί τον πολίτη και όχι έναν πολίτη που υπηρετεί
+                το κράτος.
+            </strong>
+        </div>
+
+    </section>
+
+
+    <!-- ΚΑΤΑΝΟΜΗ ΑΡΜΟΔΙΟΤΗΤΩΝ -->
+
+    <section>
+
+        <h2>📊 ΕΝΔΕΙΚΤΙΚΗ ΚΑΤΑΝΟΜΗ ΑΡΜΟΔΙΟΤΗΤΩΝ</h2>
+
+        <p>
+            Η κατανομή αυτή είναι ενδεικτική και αποτελεί βάση
+            για περαιτέρω θεσμική και νομική επεξεργασία.
+        </p>
+
+        <div class="table-wrapper">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Ισχυρό Εθνικό Κράτος</th>
+                        <th>Ελληνικές Πολιτείες</th>
+                        <th>Τοπικό επίπεδο</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Άμυνα</td>
+                        <td>Υγεία και διοίκηση υγειονομικών υπηρεσιών</td>
+                        <td>Καθημερινές τοπικές υπηρεσίες</td>
+                    </tr>
+
+                    <tr>
+                        <td>Εξωτερική πολιτική</td>
+                        <td>Διοίκηση Εκπαίδευσης</td>
+                        <td>Τοπική εξυπηρέτηση πολιτών</td>
+                    </tr>
+
+                    <tr>
+                        <td>Εθνική ασφάλεια</td>
+                        <td>Τουρισμός</td>
+                        <td>Τοπικές υποδομές</td>
+                    </tr>
+
+                    <tr>
+                        <td>Εθνική ενεργειακή στρατηγική</td>
+                        <td>Γεωργία και τοπική παραγωγή</td>
+                        <td>Τοπικές κοινωνικές ανάγκες</td>
+                    </tr>
+
+                    <tr>
+                        <td>Εθνικά δίκτυα και στρατηγικές υποδομές</td>
+                        <td>Περιβάλλον</td>
+                        <td>Τοπικές παρεμβάσεις</td>
+                    </tr>
+
+                    <tr>
+                        <td>Νομισματική και δημοσιονομική σταθερότητα</td>
+                        <td>Χωροταξία</td>
+                        <td>Πολιτιστικές και κοινοτικές δράσεις</td>
+                    </tr>
+
+                    <tr>
+                        <td>Εθνική στρατηγική Ναυτιλίας</td>
+                        <td>Περιφερειακές μεταφορές</td>
+                        <td>—</td>
+                    </tr>
+
+                    <tr>
+                        <td>Εθνικό πλαίσιο και πρότυπα Παιδείας</td>
+                        <td>Αλιεία</td>
+                        <td>—</td>
+                    </tr>
+
+                    <tr>
+                        <td>Εθνικά πρότυπα κυβερνοασφάλειας</td>
+                        <td>Τοπική οικονομική ανάπτυξη</td>
+                        <td>—</td>
+                    </tr>
+
+                    <tr>
+                        <td>Εθνικές πολιτικές για στρατηγικές υποδομές</td>
+                        <td>Περιφερειακές υποδομές</td>
+                        <td>—</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- ΤΕΛΙΚΟ -->
+
+    <section class="final-message">
+
+        <h2>ΕΛΛΗΝΙΚΕΣ ΠΟΛΙΤΕΙΕΣ</h2>
+
+        <p class="motto">
+            ΙΣΧΥΡΟ ΕΘΝΙΚΟ ΚΡΑΤΟΣ —
+            ΙΣΧΥΡΕΣ ΕΛΛΗΝΙΚΕΣ ΠΟΛΙΤΕΙΕΣ —
+            ΕΝΕΡΓΟΣ ΠΟΛΙΤΗΣ —
+            ΑΜΕΣΗ ΔΗΜΟΚΡΑΤΙΑ
+        </p>
+
+        <div class="hashtags">
+            #ΕλληνικέςΠολιτείες
+            #Ελλάδα
+            #ΆμεσηΔημοκρατία
+            #eDemocracy
+            #ΙσχυρόΕθνικόΚράτος
+            #ΕνεργόςΠολίτης
+            #ΨηφιακήΔημοκρατία
+            #Αποκέντρωση
+            #ΤεχνητήΝοημοσύνη
+            #Λογοδοσία
+        </div>
+
+    </section>
 
 </main>
 
 
 <footer>
-  <p><strong>ΕΛΛΗΝΙΚΕΣ ΠΟΛΙΤΕΙΕΣ</strong></p>
 
-  <p>
-    Πρόταση για μια σύγχρονη, αποκεντρωμένη και συμμετοχική Ελληνική Πολιτεία.
-  </p>
+    <div class="footer-title">
+        Ελληνικές Πολιτείες
+    </div>
 
-  <p class="hashtags">
-    #ΕλληνικέςΠολιτείες
-    #Ελλάδα
-    #ΆμεσηΔημοκρατία
-    #eDemocracy
-    #ΙσχυρόΕθνικόΚράτος
-    #ΕνεργόςΠολίτης
-    #ΨηφιακήΔημοκρατία
-    #Αποκέντρωση
-    #ΤεχνητήΝοημοσύνη
-    #Λογοδοσία
-  </p>
+    <p>
+        Πρόταση για ένα σύγχρονο, αποκεντρωμένο και αποτελεσματικό
+        Ελληνικό Κράτος.
+    </p>
 
-  <p style="margin-top:20px;">
-    <a href="#top" style="text-decoration:none; color:#f8df8b;">
-      ↑ Επιστροφή στην κορυφή
-    </a>
-  </p>
 </footer>
 
 </body>
